@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const Accordion = ({ items }) => {
+const AccordionContent = ({ items }) => {
   //useState
   const [activeIndex, setActiveIndex] = useState(null);
 
@@ -25,4 +25,4 @@ const Accordion = ({ items }) => {
   });
   return <div className="ui styled accordion">{renderedItems}</div>;
 };
-export default Accordion;
+export default AccordionContent;

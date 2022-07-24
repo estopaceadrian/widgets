@@ -15,11 +15,15 @@ export default function Count() {
     setCount(count - 1);
   };
 
+  const onSetZeroButtonClick = () => {
+    setCount(0);
+  };
   return (
     <div>
       <h1>Current Count:{count}</h1>
       <button onClick={onAddButtonClick}>Add</button>
       <button onClick={onRemoveButtonClick}>Remove</button>
+      <button onClick={onSetZeroButtonClick}>Set to 0</button>
     </div>
   );
 }

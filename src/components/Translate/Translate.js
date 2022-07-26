@@ -1,4 +1,7 @@
+//API KEY - AIzaSyCHUCmpR7cT_yDFHC98CZJy2LTms-IwDlM
+
 import React, { useState } from 'react';
+import Convert from './Convert';
 import Dropdown from './TranslateDropdown';
 
 const options = [
@@ -32,6 +35,9 @@ const Translate = () => {
         onSelectedChange={setLanguage}
         options={options}
       />
+      <hr />
+      <h3 className="ui header">Output</h3>
+      <Convert text={text} language={language} />
     </div>
   );
 };
